@@ -20,3 +20,15 @@ insert into produto (nome, preco, categoria,estoque, dt_criacao) values
  
  
 select * from produto;
+CREATE VIEW vwproduto  AS
+SELECT IdProduto AS Código,
+   Nome AS Produto,
+   nome varchar,
+   preco dacimal,
+   categoria varchar,
+   estoque int ,
+   data  dt_criacao,
+   
+   VlUnitario AS [ValorUnitario],
+       Tipo
+FROM Produtos
